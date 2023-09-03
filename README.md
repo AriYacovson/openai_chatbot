@@ -14,27 +14,50 @@ This repository contains a chatbot application powered by OpenAI's GPT-3.5-turbo
    ```bash
    git clone https://github.com/AriYacovson/openai_chatbot.git
 
-### Install Dependencies:
-```bash
-pip install -r requirements.txt
+2. **Install Dependencies**:
 
-## Set Up OpenAI API Key
-Ensure you have your OpenAI API key set up in an environment variable or a `.env` file.
+   To set up the necessary libraries and packages, run the following command:
 
+   ```bash
+   pip install -r requirements.txt
 
-Run the Application:
-You can run the application using FastAPI. The main entry point is main.py.
+3. **Set Up OpenAI API Key**:
 
-Usage
-Navigate to the root endpoint / to access the chat interface.
-For image generation, navigate to the /image endpoint.
-Dependencies
+   Before running the application, you need to set up your OpenAI API key. Follow these steps:
+   
+   1. Visit the [OpenAI website](https://beta.openai.com) and log in to your account.
+   
+   2. Retrieve your API key from the dashboard.
+   
+   3. Set up the API key as an environment variable or store it in a `.env` file located in the root directory of the project. Use the following format:
+
+   ```dotenv
+   OPENAI_API_KEY=your_api_key_here
+
+4. **Run the Application**:
+
+   To start the chatbot application, you can use the following command:
+   
+   ```bash
+   uvicorn main:app --reload
+
+   ## Usage
+
+- Navigate to the root endpoint `/` to access the chat interface.
+- For image generation, navigate to the `/image` endpoint.
+
+## Dependencies
+
 The project relies on several Python packages, including:
 
-FastAPI
-Jinja2
-Mangum
-OpenAI
-and others...
-Docker Deployment
+- FastAPI
+- Jinja2
+- Mangum
+- OpenAI
+- ...and others.
+
+## Docker Deployment
+
 The repository includes a Dockerfile for deploying the application using Docker. You can build and run the Docker container using the provided Dockerfile.
+
+
