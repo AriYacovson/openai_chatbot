@@ -13,13 +13,14 @@ This repository contains a chatbot application powered by OpenAI's GPT-3.5-turbo
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/AriYacovson/openai_chatbot.git
-Install Dependencies:
 
-bash
-Copy code
+### Install Dependencies:
+```bash
 pip install -r requirements.txt
-Set Up OpenAI API Key:
-Ensure you have your OpenAI API key set up in an environment variable or a .env file.
+
+## Set Up OpenAI API Key
+Ensure you have your OpenAI API key set up in an environment variable or a `.env` file.
+
 
 Run the Application:
 You can run the application using FastAPI. The main entry point is main.py.
